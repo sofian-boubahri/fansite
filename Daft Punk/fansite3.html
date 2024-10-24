@@ -2,49 +2,47 @@
 <html lang="fr">
 
 <head>
-    <meta cha#rset="UTF-8">
-    <a href="#"></a>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daft Punk</title>
+    <link href="./fansite3.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/testeee.png">
-    <link href="fansite3.css" rel="stylesheet">
-
+    
+    <title>Daft Punk</title>
 </head>
 
+
 <body>
+    <div class="logo-container">
+        <div class="logo"></div>
+    </div>
 
-    <div class="multicolor"></div>
+    <div class="header-container">
+        <a href="#news" class="header-text">News</a>
+        <a href="#music" class="header-text">Music</a>
+        <a href="#media" class="header-text">Medias</a>
+        <a href="#event" class="header-text">Event</a>
+        <a href="#link" class="header-text">Links</a>
+        <a href="#contact" class="header-text">Contact</a>
+    </div>
 
-    <header>
-        <section>
-            <a href="index.html" class="ht">Accueil</a>
-            <a href="#actualite" class="ht">Actualité</a>
-            <a href="#" class="ht">Réalisations</a>
-            <a href="#" class="ht">Événements</a>
-            <a href="#" class="ht">Photos</a>
-        </section>
-    </header>
+    <div class="news" id="news">News</div>
 
-    <h1 class="tp">Daft Punk</h1>
-
-    <section class="articles" id="actualite">
+    <section class="articles">
         <article>
             <figure>
-                <img src="./assets/jo.jpg" alt="" />
+                <img src="./assets/jo.jpg" alt="Record de streaming" />
             </figure>
             <div class="article-body">
-                <h2>JO de Paris 2024</h2>
+                <h2>Record de streaming</h2>
                 <p>
-                    Des rumeurs circulent sur une possible participation de Daft Punk à la cérémonie d'ouverture, bien
-                    que cela ne soit pas confirmé officiellement. Le metteur en scène Thomas Jolly a évoqué cette
-                    possibilité récemment, excitant les fans.
+                    Le tube "One More Time" des Daft Punk est devenu l'une des chansons les plus écoutées sur Spotify.
                 </p>
             </div>
         </article>
 
         <article>
             <figure>
-                <img src="./assets/solo.jpg" alt="" />
+                <img src="./assets/solo.jpg" alt="Album Solo" />
             </figure>
             <div class="article-body">
                 <h2>Album Solo</h2>
@@ -56,10 +54,10 @@
 
         <article>
             <figure>
-                <img src="./assets/anniv.jpg" alt="" />
+                <img src="./assets/anniv.jpg" alt="Anniversaire de Random Access Memories" />
             </figure>
             <div class="article-body">
-                <h2>Anniversaire de "Random Access Memories" </h2>
+                <h2>Anniversaire de "Random Access Memories"</h2>
                 <p>
                     Daft Punk a célébré les 10 ans de cet album en mai 2023 avec une édition spéciale.
                 </p>
@@ -67,29 +65,170 @@
         </article>
     </section>
 
+    <div class="musics" id="music">Musics</div>
 
-    <div class="slider-container">
-        <div class="menu">
-            <label for="slide-dot-1"></label>
-            <label for="slide-dot-2"></label>
-            <label for="slide-dot-3"></label>
-            <label for="slide-dot-4"></label>
+    <div class="img-container">
+        <div class="img-wrapper">
+            <img src="./assets/music/img1.jfif" class="imag-music">
+            <div class="music-title">One More Time</div>
         </div>
-
-        <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-        <img class="slide-img" src="./assets/dp1.jpg">
-
-        <input class="slide-input" id="slide-dot-2" type="radio" name="slides" checked>
-        <img class="slide-img" src="./assets/dp2.jpg">
-
-        <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
-        <img class="slide-img" src="./assets/dp3.jpg">
-
-        <input class="slide-input" id="slide-dot-4" type="radio" name="slides">
-        <img class="slide-img" src="./assets/dp4.png">
+        <div class="img-wrapper">
+            <img src="./assets/music/iimg7.jpg" class="imag-music">
+            <div class="music-title">Harder, Better, Faster, Stronger</div>
+        </div>
+        <div class="img-wrapper">
+            <img src="./assets/music/img2.jpg" class="imag-music">
+            <div class="music-title">Around the World</div>
+        </div>
     </div>
 
-    
+    <div class="img-container">
+        <div class="img-wrapper">
+            <img src="./assets/music/img3.jpg" class="imag-music">
+            <div class="music-title">Da Funk</div>
+        </div>
+        <div class="img-wrapper">
+            <img src="./assets/music/img4.jpg" class="imag-music">
+            <div class="music-title">Get Lucky</div>
+        </div>
+        <div class="img-wrapper">
+            <img src="./assets/music/img5.jpg" class="imag-music">
+            <div class="music-title">Instant Crush</div>
+        </div>
+    </div>
+
+    <div class="img-container">
+        <div class="img-wrapper">
+            <img src="./assets/music/img6.webp" class="imag-music">
+            <div class="music-title">Digital Love</div>
+        </div>
+        <div class="img-wrapper">
+            <img src="./assets/music/img8.jpg" class="imag-music">
+            <div class="music-title">Lose Yourself to Dance</div>
+        </div>
+        <div class="img-wrapper">
+            <img src="./assets/music/img9.jpg" class="imag-music">
+            <div class="music-title">Robot Rock</div>
+        </div>
+    </div>
+
+    <div class="media" id="media">Medias</div>
+
+    <div class="media-container">
+        <img src="./assets/media/media1.jpg" class="imag-media">
+        <img src="./assets/media/media2.jpg" class="imag-media">
+        <img src="./assets/media/media3.jpg" class="imag-media">
+    </div>
+
+    <div class="media-container">
+        <img src="./assets/media/media4.jpg" class="imag-media">
+        <img src="./assets/media/media5.jpg" class="imag-media">
+        <img src="./assets/media/media6.jpg" class="imag-media">
+    </div>
+
+    <div class="video-container">
+        <iframe class="videos" src="https://www.youtube.com/embed/ySLc8gZ3oEc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <iframe class="videos" src="https://www.youtube.com/embed/dDVrKwH3NgU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="event" id="event">Events</div>
+
+    <section class="articles">
+        <article>
+            <figure>
+                <img src="./assets/event/event2.jpg" alt="Record de streaming" />
+            </figure>
+            <div class="article-body">
+                <h2>Réédition de Random Access Memories (2023)</h2>
+                <p>
+                    En décembre 2020, Disney a réédité la bande originale du film Tron: Legacy, composée par Daft Punk,
+                    dans une
+                    version vinyle deluxe. Cette édition spéciale incluait de nouveaux mix et une qualité sonore
+                    améliorée, rendant
+                    hommage à l’un de leurs projets les plus emblématiques dans le domaine du cinéma. </p>
+            </div>
+        </article>
+
+        <article>
+            <figure>
+                <img src="./assets/event/event3.jpg" alt="Album Solo" />
+            </figure>
+            <div class="article-body">
+                <h2>Annonce de la séparation (2021)</h2>
+                <p>
+                    Le 22 février 2021, Daft Punk a officiellement annoncé leur séparation avec la diffusion de la vidéo
+                    intitulée
+                    "Epilogue". Cet événement a pris tout le monde par surprise et a marqué la fin de 28 ans de carrière
+                    du duo. La
+                    vidéo reprenait une scène de leur film Electroma (2006), symbolisant leur fin en tant que groupe.
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <figure>
+                <img src="./assets/event/event1.png" alt="Anniversaire de Random Access Memories" />
+            </figure>
+            <div class="article-body">
+                <h2>Sortie de la bande originale de Tron: Legacy en vinyle deluxe (2020)</h2>
+                <p>
+                    En décembre 2020, Disney a réédité la bande originale du film Tron: Legacy, composée par Daft Punk,
+                    dans une
+                    version vinyle deluxe. Cette édition spéciale incluait de nouveaux mix et une qualité sonore
+                    améliorée, rendant
+                    hommage à l’un de leurs projets les plus emblématiques dans le domaine du cinéma. </p>
+            </div>
+        </article>
+    </section>
+
+    <div class="link" id="link">Links</div>
+
+    <p class="link-text">Découvrez les autres pages des fans de Daft Punk</p>
+
+    <div class="link-container">
+        <a href="http://daftworld.over-blog.com"><img src="./assets/link/link1.png" class="link-icon"></a>
+        <a href="https://www.daftpunk-anthology.com"><img src="./assets/link/link2.png" class="link-icon"></a>
+        <a href="https://daft.club"><img src="./assets/link/link3.png" class="link-icon"></a>
+    </div>
+
+    <div class="contact" id="contact">Contact</div>
+
+    <div class="tout">
+        <div class="contact-container">
+            <h1>CONTACT</h1>
+            <form action="#" method="POST">
+                <label for="prenom">Votre prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+
+                <label for="email">Votre adresse mail</label>
+                <input type="email" id="email" name="email" placeholder="Adresse mail" required>
+
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="contact">Rermerciments</div>
+    <p class="p-end">Un grand merci à tous ceux qui continuent de faire vivre l'esprit de Daft Punk. À nos
+        contributeurs,
+        développeurs, et fans du monde entier : <br> ce site n'existerait pas sans vous. Vous êtes les vrais architectes
+        de
+        cette communauté.
+        Merci à Daft Punk pour nous avoir offert des <br>musiques intemporelles et un univers unique. Nous vous saluons
+        tous
+        et espérons que ce site sera à la hauteur de votre passion.</p>
+
 </body>
 
 </html>
