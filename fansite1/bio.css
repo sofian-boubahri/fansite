@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'halloween';
+    src: url('font/Halloween.ttf'); format ('truetype');
+}
+@font-face {
+    font-family: 'posterable';
+    src: url('font/POSTERABLE.ttf'); format ('truetype');
+}
+@font-face {
+    font-family: 'tox';
+    src: url(./font/Tox\ Typewriter.ttf); format ('truetype');
+}
+main{
+    background-color: black;
+    
+}
+h1{
+    color: rgb(231, 229, 124);
+    font-family: halloween;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+
+}
+header {
+    position: fixed;
+    z-index: 10; 
+    top: 4rem;
+    width: 100%;
+    display: flex;
+justify-content: center;
+gap: 200px;
+    opacity: 1;
+    transition: all 1000ms;
+    color: rgb(231, 229, 124);
+    font-family: posterable;
+    margin: 10px;
+}
+
+
+.text{
+text-decoration: none;
+color: rgb(231, 229, 124);
+}
+.bio {
+    font-family: tox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    color: rgb(231, 229, 124);
+    height: calc(90vh - 80px);
+    text-align: center; 
+    max-width: 600px; 
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.123);
+    box-shadow: 10;
+}
+
+.button {
+    border: none;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba( 0, 0, 0, 0);
+
+
+}
+.doja{
+    text-decoration: none;
+}
+.heade {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10; 
+    text-decoration: none;
+}
+.button img {
+    width: 30px;
+    height: auto; 
+}
+.bio {
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+
+}
+main {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./asset1/fondbio.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -10;
+}

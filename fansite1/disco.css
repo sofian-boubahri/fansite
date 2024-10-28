@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'halloween';
+    src: url('font/Halloween.ttf'); format ('truetype');
+}
+@font-face {
+    font-family: 'posterable';
+    src: url('font/POSTERABLE.ttf'); format ('truetype');
+}
+@font-face {
+    font-family: 'tox';
+    src: url(./font/Tox\ Typewriter.ttf); format ('truetype');
+}
+
+h1{
+    color: rgb(231, 229, 124);
+    font-family: halloween;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+header {
+    position: fixed;
+    z-index: 10; 
+    top: 4rem;
+    width: 100%;
+    display: flex;
+justify-content: center;
+gap: 200px;
+    opacity: 1;
+    transition: all 1000ms;
+    color: rgb(231, 229, 124);
+    font-family: posterable;
+    margin: 10px;
+}
+
+
+.text{
+text-decoration: none;
+color: rgb(231, 229, 124);
+}
+
+.button {
+    border: none;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba( 0, 0, 0, 0);
+
+
+}
+.doja{
+    text-decoration: none;
+}
+.heade {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10; 
+    text-decoration: none;
+}
+.button img {
+    width: 30px;
+    height: auto; 
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.carrousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden; 
+}
+
+.carrousel input {
+    display: none;
+}
+
+.carrousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%; 
+    display: flex;
+    justify-content: center;
+    position: relative; 
+}
+
+.carrousel input:checked:nth-of-type(1) ~ .carrousel-images {
+    transform: translateX(0);
+}
+
+.carrousel input:checked:nth-of-type(2) ~ .carrousel-images {
+    transform: translateX(-100%);
+}
+
+.carrousel input:checked:nth-of-type(3) ~ .carrousel-images {
+    transform: translateX(-200%);
+}
+
+.carrousel input:checked:nth-of-type(4) ~ .carrousel-images {
+    transform: translateX(-300%); 
+}
+
+.carrousel-images img {
+    max-width: 100%;
+    height: auto; 
+    margin-top: 30px;
+    border-radius: 8px;
+
+}
+
+.titre {
+    font-family: posterable;
+    position: absolute;
+    bottom: 10%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(122, 37, 37);
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.slide:hover .titre {
+    opacity: 1;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.control-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input:checked + .control-dot {
+    background: #630202;
+}
+
+
+main {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./asset1/fondf.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -10;
+    border-radius: 10px;
+}
+
+
+
+
+.titre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 140px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.338);
+    border-radius: 8px;
+    
+
+
+}
